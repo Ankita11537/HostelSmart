@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostelSmart - Hostel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="home">
+        <div class="logo">🏨 HostelSmart</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#fees">Fees</a>
+            <a href="#register">Registration</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <!--Admin-login Link-->
+            <a href="admin-login.html">Admin Login</a>
+
+            <!--User Login Link-->
+            <a href="login.html">Log out</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero">
+        <h1>Welcome to HostelSmart</h1>
+        <p>Comfortable, Safe and Affordable Hostel Living</p>
+        <a href="#rooms" class="btn">Explore Rooms</a>
+        <a href="#register" class="btn secondary-btn">Register Now</a>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="section" id="rooms">
+        <h2>Our Hostel Rooms</h2>
+        <p class="section-text">
+            Choose a comfortable room according to your needs.
+        </p>
+
+        <div class="room-container">
+
+            <div class="room-card">
+                <img 
+                    src="img/images(3).jfif"
+                    alt="Single sharing room">
+
+                <h3>Single Sharing Room</h3>
+                <p>Private room for one student.</p>
+                <h3 class="price">₹5,000 / Month</h3>
+                <a href="#register" class="card-btn">Apply Now</a>
+            </div>
+
+            <div class="room-card">
+                <img
+                    src="img/images(2).jfif"
+                    alt="Double sharing room">
+
+                <h3>Double Sharing Room</h3>
+                <p>Comfortable room for two students.</p>
+                <h3 class="price">₹3,500 / Month</h3>
+                <a href="#register" class="card-btn">Apply Now</a>
+            </div>
+
+            <div class="room-card">
+                <img
+                    src="img/images (1).jfif"
+                    alt="Triple sharing room">
+
+                <h3>Triple Sharing Room</h3>
+                <p>Affordable room for three students.</p>
+                <h3 class="price">₹2,500 / Month</h3>
+                <a href="#register" class="card-btn">Apply Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="section facilities" id="facilities">
+        <h2>Our Facilities</h2>
+        <p class="section-text">
+            Everything you need for comfortable student living.
+        </p>
+
+        <div class="facility-container">
+
+            <div class="facility-card">
+                <span>🍲</span>
+                <h3>Mess Facility</h3>
+                <p>Daily food and dining facility.</p>
+            </div>
+
+            <div class="facility-card">
+                <span>📶</span>
+                <h3>Free Wi-Fi</h3>
+                <p>Internet access for students.</p>
+            </div>
+
+            <div class="facility-card">
+                <span>📚</span>
+                <h3>Study Room</h3>
+                <p>A peaceful place for studying.</p>
+            </div>
+
+            <div class="facility-card">
+                <span>🔒</span>
+                <h3>Security</h3>
+                <p>A secure hostel environment.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Fees Section -->
+    <section class="section" id="fees">
+        <h2>Hostel Fees</h2>
+        <p class="section-text">
+            Select a room according to your budget.
+        </p>
+
+        <div class="fee-box">
+            <p>Single Sharing <strong>₹5,000/month</strong></p>
+            <p>Double Sharing <strong>₹3,500/month</strong></p>
+            <p>Triple Sharing <strong>₹2,500/month</strong></p>
+            <p class="note">Note: Fees are sample amounts for this project.</p>
+        </div>
+
+        <a href="#register" class="btn">Book Your Room</a>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="section registration" id="register">
+        <h2>Student Registration</h2>
+        <p class="section-text">
+            Fill in your details to apply for a hostel room.
+        </p>
+
+        <form id="registrationForm">
+
+            <label for="name">Student Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="studentName"
+                placeholder="Enter your full name"
+                required>
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <label for="phone">Mobile Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter 10-digit mobile number"
+                pattern="[0-9]{10}"
+                title="Enter a 10-digit mobile number"
+                required>
+
+            <label for="course">Course Name</label>
+            <input
+                type="text"
+                id="course"
+                name="course"
+                placeholder="Example: BCS"
+                required>
+
+            <label for="room">Select Room Type</label>
+            <select id="room" name="roomType" required>
+                <option value="">-- Select Room --</option>
+                <option value="single">Single Sharing</option>
+                <option value="double">Double Sharing</option>
+                <option value="triple">Triple Sharing</option>
+            </select>
+
+            <label for="date">Joining Date</label>
+            <input
+                type="date"
+                id="date"
+                name="joiningDate"
+                required>
+
+            <button type="submit" class="submit-btn">
+                Submit Registration
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About HostelSmart</h2>
+        <p>
+            HostelSmart is a student hostel website designed to display
+            rooms, hostel facilities, fees and student registration
+            information in one place. Our goal is to make hostel
+            information easy to access for students.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+            <p>🏠 Address: Hostel Road, Maharashtra, India</p>
+            <p>📧 Email: hostelsmart@example.com</p>
+            <p>📞 Phone: 9876543210</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 HostelSmart | All Rights Reserved</p>
+        <p>BCS Final Year Project</p>
+        <a href="#home">↑ Back to Top</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostelSmart - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="header">
+    <h2>🏨 HostelSmart Admin</h2>
+    <a href="index.html">Back to Home</a>
+</header>
+
+<div class="container">
+
+    <h1>Admin Dashboard</h1>
+    <p>Manage Hostel Student Registrations</p>
+
+    <div class="summary">
+        <div class="summary-card">
+            <h3>Total Students</h3>
+            <h2 id="totalStudents">0</h2>
+        </div>
+    </div>
+
+    <h2>Student Registration Details</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                    <th>Room</th>
+                    <th>Fees</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+                <!-- Student records appear here -->
+            </tbody>
+        </table>
+    </div>
+
+    <p id="emptyMessage">No student registrations found.</p>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
